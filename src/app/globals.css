@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:light}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f3ff;color:#201044;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}::selection{background:#a46aff;color:white}button{cursor:pointer}a,button{ -webkit-tap-highlight-color:transparent}
+@layer components{
+.site-container{@apply mx-auto w-full max-w-[1450px] px-4 sm:px-6 lg:px-9}
+.glass{@apply border border-purple-200/90 bg-white/85 shadow-[0_10px_28px_rgba(76,26,140,.08)]}
+.card{@apply rounded-2xl border border-purple-200/80 bg-white shadow-[0_6px_24px_rgba(75,23,153,.07)]}
+.btn-primary{@apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple-700 to-violet-700 px-5 py-2.5 text-sm font-bold text-white shadow-[0_6px_16px_rgba(105,24,196,.22)] transition hover:-translate-y-0.5 hover:shadow-purple}
+.btn-outline{@apply inline-flex items-center justify-center gap-2 rounded-full border border-purple-700 bg-white px-5 py-2.5 text-sm font-semibold text-purple-950 transition hover:bg-purple-50}
+.input{@apply w-full rounded-xl border border-purple-200 bg-white px-4 py-3 text-sm text-[#201044] outline-none placeholder:text-[#8b819c] focus:border-purple-500 focus:ring-2 focus:ring-purple-500/15}
+.section-title{@apply text-2xl font-black tracking-tight text-[#281047] sm:text-[28px]}
+.eyebrow{@apply text-xs font-bold uppercase tracking-[.13em] text-purple-700}
+}
+.grid-bg{background-image:linear-gradient(rgba(143,91,214,.065) 1px,transparent 1px),linear-gradient(90deg,rgba(143,91,214,.065) 1px,transparent 1px);background-size:36px 36px}
+.neon{color:#781fd0}.gradient-text{background:linear-gradient(100deg,#7b1dc5,#ad36e1);background-clip:text;color:transparent}.hero-sheen{background:radial-gradient(ellipse at 85% 35%,rgba(155,100,252,.2),transparent 50%),linear-gradient(120deg,#f6f0ff 0%,#fffdff 44%,#eaddff 100%)}.panel-glow{box-shadow:0 0 0 1px rgba(143,84,231,.2),0 14px 35px rgba(65,15,124,.12)}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:#c8afe8;border-radius:10px}::-webkit-scrollbar-track{background:#f9f5ff}
